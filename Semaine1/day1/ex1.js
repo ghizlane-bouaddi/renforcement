@@ -1,17 +1,13 @@
-let T = ["ghizlane","ikram","ismail","slma"];
+let T =['ghizlane','ismail','ikram','slma'];
 console.log(T);
+
 console.log(T[0]);
 console.log(T[T.length-1]);
 console.log(T.length);
-T.push("adame","Mouhamed");
+let P = T.push('ltifa');
 console.log(T);
-// T.pop();
-console.log(T.pop());
-T.shift();
+let A = T.pop();
 console.log(T);
-
+console.log(A)
+let S = T.shift();
 console.log(T);
-
-
-
-
