@@ -43,3 +43,4 @@ for(let i=0;i<tournoi.length;i++){
     console.log(`${i+1} - ${tournoi[i].nom} - ${tournoi[i].points} -( ${tournoi[i].buts_pour - tournoi[i].buts_contre})`);
     
 }
+
