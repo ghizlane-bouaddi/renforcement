@@ -6,13 +6,17 @@ let chansons =[
     {titre : 'lalala', artiste : 'ahlam', durée : 212, genre : 'Rock'},
     {titre : 'nonino', artiste : 'latifa', durée : 344, genre : 'sade'},
 ]
+let rock = [];
 
 
-for(let i=0;i<chansons.length;i++){
-    console.log(`${chansons[i].titre}`);
+function showTitle() {
+    for(let i=0;i<chansons.length;i++){
+        showItem(chansons[i].titre);
+    }
 }
 
-let rock = [];
+showTitle();
+
 
 rock = chansons.filter(chanson=>chanson.genre === 'Rock');
 console.log(rock);
@@ -38,13 +42,13 @@ minutes = Math.floor(total/60);
 s = total %60;
 console.log(`${minutes} : ${s}`);
 let max = 0;
-for(let i=0;i<chansons.length;i++){
-    
+for(let i=0;i<chansons.length;i++){  
 if(chansons[i].durée > max){
   max = chansons[i].durée
 }
 }
-console.log(max);
+
+showItem(max);
 
 
 let trouve =0;
@@ -71,4 +75,15 @@ let date = chansons.sort(function(a,b){
 for(let i=0;i<chansons.length;i++){
     console.log(`${chansons[i].titre} - ${chansons[i].durée}`);
     
+}
+
+
+function showItem(data){
+    console.log(data);
+}
+
+function showList(list) {
+    for (let i = 0; i < list.length; i++) {
+        showItem(list[i]);
+    }
 }
